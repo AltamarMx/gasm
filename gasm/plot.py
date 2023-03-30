@@ -8,7 +8,6 @@ from IPython.core.display import display, HTML
 
 
 
-
 def grafiquita():
 # Load Bokeh resources for inline display
     output_notebook()
@@ -50,18 +49,18 @@ def grafiquita():
     plot = figure(title="Hello Kitty Timeline",
                   x_axis_label="Events",
                   y_axis_label="Year",
-                  x_range=(-0.5, 0.5),
+                  x_range=(-0.5, 3),
                   y_range=(1970, 2025),
                   width=200,
                   height=800,
                   tools="")
 
     # Add circle glyphs for each data point (y coordinates aligned)
-    circles_kitty = plot.circle( x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
-    circles_grecia = plot.circle(x=2, y="year", size=10, source=source_grecia, color="red", alpha=0.8)
+    circles_kitty =  plot.circle( x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
+    circles_grecia = plot.circle( x=2, y="year", size=10, source=source_grecia, color="red", alpha=0.8)
 
     # Add hover tool
-    hover = HoverTool(
+    hover_kitty = HoverTool(
         tooltips="""
         <div>
             <div>
@@ -74,10 +73,28 @@ def grafiquita():
             </div>
         </div>
         """,
-        renderers=[circles_kitty,circles_grecia],
+        renderers=[circles_kitty],
         mode="mouse"
     )
-    plot.add_tools(hover)
+     # Add hover tool
+    hover_grecia = HoverTool(
+        tooltips="""
+        <div>
+            <div>
+                <img src="@image" alt="Hello Kitty Image" width="80" height="auto" border="2" style="float: right; margin: 0px 15px 15px 0px;"/>
+            </div>
+            <div>
+                <span style="font-size: 17px; font-weight: bold;">@year</span>
+                <br>
+                <span style="font-size: 15px;">@event</span>
+            </div>
+        </div>
+        """,
+        renderers=[circles_grecia],
+        mode="mouse"
+    )
+    plot.add_tools(hover_kitty)
+    plot.add_tools(hover_grecia)
 
     # Remove gridlines and minor ticks
     plot.xgrid.grid_line_color = None
@@ -93,5 +110,6 @@ def grafiquita():
 
     # Show the result
 #     
+     
     
     
