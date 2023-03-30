@@ -1,2 +1,2 @@
-from .plot import *
+from .grafiquita import *
 from .hello import *
