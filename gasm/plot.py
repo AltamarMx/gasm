@@ -3,6 +3,7 @@ import pandas as pd
 from bokeh.models import ColumnDataSource, HoverTool
 from bokeh.plotting import figure, show, output_notebook
 from bokeh.palettes import Category10
+import random
 
 def grafiquita():
 # Load Bokeh resources for inline display
@@ -61,3 +62,26 @@ def grafiquita():
 
     # Show the result
     show(plot)
+    
+    
+    
+
+def hello_kitty():
+    """
+    Display a random phrase from a list of phrases.
+
+    :param phrases: List of phrases to choose from
+    :type phrases: list
+    """
+    phrases = [
+    "Carpe diem.",
+    "Hakuna matata.",
+    "Keep calm and carry on.",
+    "Seize the day.",
+    "The sky is the limit.",
+    ]
+
+    phrase = random.choice(phrases)
+    print(phrase)
+
+]
