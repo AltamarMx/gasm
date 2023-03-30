@@ -1,3 +1,5 @@
+import random
+
 def hello_kitty():
     """
     Display a random phrase from a list of phrases.

@@ -2,7 +2,6 @@ import pandas as pd
 from bokeh.models import ColumnDataSource, HoverTool
 from bokeh.plotting import figure, show, output_notebook
 from bokeh.palettes import Category10
-import random
 
 def grafiquita():
 # Load Bokeh resources for inline display
