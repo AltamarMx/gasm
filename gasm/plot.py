@@ -21,22 +21,22 @@ def grafiquita():
     ]
 
 
-data = [
-    {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
-    {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
-    {"year": 1976, "event": "Hello Kitty gets her iconic bow", "image": "https://example.com/hello_kitty_1976.jpg"},
-    {"year": 1980, "event": "Sanrio launches the first Hello Kitty themed merchandise", "image": "https://example.com/hello_kitty_1980.jpg"},
-    {"year": 1983, "event": "First Hello Kitty animated television series", "image": "https://example.com/hello_kitty_1983.jpg"},
-    {"year": 1987, "event": "First Hello Kitty feature film, 'Kitty and Mimi's New Umbrella'", "image": "https://example.com/hello_kitty_1987.jpg"},
-    {"year": 1993, "event": "First Hello Kitty video game for Nintendo Game Boy", "image": "https://example.com/hello_kitty_1993.jpg"},
-    {"year": 1999, "event": "Hello Kitty appears on MasterCard debit cards", "image": "https://example.com/hello_kitty_1999.jpg"},
-    {"year": 2004, "event": "Hello Kitty celebrates her 30th anniversary", "image": "https://example.com/hello_kitty_2004.jpg"},
-    {"year": 2008, "event": "Hello Kitty is named the official ambassador of Japanese tourism", "image": "https://example.com/hello_kitty_2008.jpg"},
-    {"year": 2009, "event": "Hello Kitty becomes a UNICEF ambassador", "image": "https://example.com/hello_kitty_2009.jpg"},
-    {"year": 2014, "event": "Hello Kitty celebrates her 40th anniversary", "image": "https://example.com/hello_kitty_2014.jpg"},
-    {"year": 2015, "event": "Hello Kitty Cafe food truck debuts in the United States", "image": "https://example.com/hello_kitty_2015.jpg"},
-    {"year": 2018, "event": "Hello Kitty and Friends themed attraction opens at Universal Studios Hollywood", "image": "https://example.com/hello_kitty_2018.jpg"},
-]
+    data = [
+        {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
+        {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
+        {"year": 1976, "event": "Hello Kitty gets her iconic bow", "image": "https://example.com/hello_kitty_1976.jpg"},
+        {"year": 1980, "event": "Sanrio launches the first Hello Kitty themed merchandise", "image": "https://example.com/hello_kitty_1980.jpg"},
+        {"year": 1983, "event": "First Hello Kitty animated television series", "image": "https://example.com/hello_kitty_1983.jpg"},
+        {"year": 1987, "event": "First Hello Kitty feature film, 'Kitty and Mimi's New Umbrella'", "image": "https://example.com/hello_kitty_1987.jpg"},
+        {"year": 1993, "event": "First Hello Kitty video game for Nintendo Game Boy", "image": "https://example.com/hello_kitty_1993.jpg"},
+        {"year": 1999, "event": "Hello Kitty appears on MasterCard debit cards", "image": "https://example.com/hello_kitty_1999.jpg"},
+        {"year": 2004, "event": "Hello Kitty celebrates her 30th anniversary", "image": "https://example.com/hello_kitty_2004.jpg"},
+        {"year": 2008, "event": "Hello Kitty is named the official ambassador of Japanese tourism", "image": "https://example.com/hello_kitty_2008.jpg"},
+        {"year": 2009, "event": "Hello Kitty becomes a UNICEF ambassador", "image": "https://example.com/hello_kitty_2009.jpg"},
+        {"year": 2014, "event": "Hello Kitty celebrates her 40th anniversary", "image": "https://example.com/hello_kitty_2014.jpg"},
+        {"year": 2015, "event": "Hello Kitty Cafe food truck debuts in the United States", "image": "https://example.com/hello_kitty_2015.jpg"},
+        {"year": 2018, "event": "Hello Kitty and Friends themed attraction opens at Universal Studios Hollywood", "image": "https://example.com/hello_kitty_2018.jpg"},
+    ]
 
     # Convert data to a pandas DataFrame
     df = pd.DataFrame(data)
