@@ -44,7 +44,7 @@ def grafiquita():
         tooltips="""
         <div>
             <div>
-                <img src="@image" alt="Hello Kitty Image" width="200" height="auto" border="2" style="float: left; margin: 0px 15px 15px 0px;"/>
+                <img src="@image" alt="Hello Kitty Image" width="80" height="auto" border="2" style="float: left; margin: 0px 15px 15px 0px;"/>
             </div>
             <div>
                 <span style="font-size: 17px; font-weight: bold;">@year</span>
