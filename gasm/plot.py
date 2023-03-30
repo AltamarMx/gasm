@@ -1,4 +1,3 @@
-
 import pandas as pd
 from bokeh.models import ColumnDataSource, HoverTool
 from bokeh.plotting import figure, show, output_notebook

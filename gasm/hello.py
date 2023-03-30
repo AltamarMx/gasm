@@ -10,10 +10,7 @@ def hello_kitty():
     "Hakuna matata.",
     "Keep calm and carry on.",
     "Seize the day.",
-    "The sky is the limit.",
-    ]
+    "The sky is the limit."]
 
     phrase = random.choice(phrases)
     print(phrase)
-
-]
