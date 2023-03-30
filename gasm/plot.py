@@ -7,7 +7,6 @@ from bokeh.embed import components
 from IPython.core.display import display, HTML
 
 
-
 def grafiquita():
 # Load Bokeh resources for inline display
     output_notebook()
@@ -101,7 +100,7 @@ def grafiquita():
     plot.ygrid.grid_line_color = None
     plot.xaxis.minor_tick_line_color = None
     plot.yaxis.minor_tick_line_color = None
-    show(plot)
+#     show(plot)
 
     
     script, div = components(plot)
@@ -110,6 +109,6 @@ def grafiquita():
 
     # Show the result
 #     
-     
+    
     
     
