@@ -57,8 +57,8 @@ def grafiquita():
                   tools="")
 
     # Add circle glyphs for each data point (y coordinates aligned)
-    circles_kitty = plot.circle(x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
-    # circles = plot.circle(x=2, y="year", size=10, source=source_grecia, color="red", alpha=0.8)
+    circles_kitty = plot.circle( x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
+    circles_grecia = plot.circle(x=2, y="year", size=10, source=source_grecia, color="red", alpha=0.8)
 
     # Add hover tool
     hover = HoverTool(
@@ -74,7 +74,7 @@ def grafiquita():
             </div>
         </div>
         """,
-        renderers=[circles_kitty],
+        renderers=[circles_kitty,circles_grecia],
         mode="mouse"
     )
     plot.add_tools(hover)
