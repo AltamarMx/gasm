@@ -1,2 +1,2 @@
-from .grafiquita import *
-from .hello import *
+from .plot import grafiquita
+from .hello import hello_kitty
