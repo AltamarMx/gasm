@@ -6,12 +6,6 @@ from bokeh.palettes import Category10
 from bokeh.embed import components
 from IPython.core.display import display, HTML
 
-def generate_hello_kitty_timeline(data):
-    # Your plotting function implementation here
-
-    script, div = components(plot)
-    html_repr = f"<div>{script}{div}</div>"
-    display(HTML(html_repr))
 
 
 
@@ -69,13 +63,14 @@ def grafiquita():
     plot.ygrid.grid_line_color = None
     plot.xaxis.minor_tick_line_color = None
     plot.yaxis.minor_tick_line_color = None
+    show(plot)
+
     
     script, div = components(plot)
     html_repr = f"<div>{script}{div}</div>"
     display(HTML(html_repr))
 
     # Show the result
-#     show(plot)
-    
+#     
     
     
