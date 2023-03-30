@@ -45,14 +45,21 @@ def grafiquita():
     source_grecia = ColumnDataSource(df_grecia)
 
     # Create a Bokeh figure
-    plot = figure(title="Hello Kitty Timeline",
+    plot = figure(title="Hello Kitty & Grecia Timeline",
                   x_axis_label="Events",
                   y_axis_label="Year",
                   x_range=(-0.5, 3),
                   y_range=(1970, 2025),
-                  width=200,
+                  width=480,
                   height=800,
-                  tools="")
+                  tools="",
+            # Set the background color and margin size
+                  border_fill_color="white",
+                  min_border_left=200,
+                  min_border_right=100,
+                  min_border_top=50,
+                  min_border_bottom=50
+                 )
 
     # Add circle glyphs for each data point (y coordinates aligned)
     circles_kitty =  plot.circle( x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
@@ -63,7 +70,7 @@ def grafiquita():
         tooltips="""
         <div>
             <div>
-                <img src="@image" alt="Hello Kitty Image" width="80" height="auto" border="2" style="float: left; margin: 0px 15px 15px 0px;"/>
+                <img src="@image" alt="Hello Kitty Image" width="80" height="auto" border="2" style="float: left; right: 0px 15px 15px 0px;"/>
             </div>
             <div>
                 <span style="font-size: 17px; font-weight: bold;">@year</span>
@@ -99,7 +106,10 @@ def grafiquita():
     plot.xgrid.grid_line_color = None
     plot.ygrid.grid_line_color = None
     plot.xaxis.minor_tick_line_color = None
+    plot.xaxis.minor_tick_line_color = None
     plot.yaxis.minor_tick_line_color = None
+    plot.xaxis.ticker = []
+
 #     show(plot)
 
     
