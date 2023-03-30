@@ -13,7 +13,7 @@ def grafiquita():
 # Load Bokeh resources for inline display
     output_notebook()
 
-    data = [
+    grecia = [
         {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
         {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
         {"year": 1983, "event": "First Hello Kitty animated television series", "image": "https://example.com/hello_kitty_1983.jpg"},
@@ -21,7 +21,7 @@ def grafiquita():
     ]
 
 
-    data = [
+    kitty = [
         {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
         {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
         {"year": 1976, "event": "Hello Kitty gets her iconic bow", "image": "https://example.com/hello_kitty_1976.jpg"},
@@ -39,10 +39,12 @@ def grafiquita():
     ]
 
     # Convert data to a pandas DataFrame
-    df = pd.DataFrame(data)
+    df_grecia = pd.DataFrame(grecia)
+    df_kitty = pd.DataFrame(kitty)
 
     # Convert DataFrame to a Bokeh ColumnDataSource
-    source = ColumnDataSource(df)
+    source_kitty = ColumnDataSource(df_kitty)
+    source_grecia = ColumnDataSource(df_grecia)
 
     # Create a Bokeh figure
     plot = figure(title="Hello Kitty Timeline",
@@ -55,7 +57,8 @@ def grafiquita():
                   tools="")
 
     # Add circle glyphs for each data point (y coordinates aligned)
-    circles = plot.circle(x=0, y="year", size=10, source=source, color=Category10[10][0], alpha=0.8)
+    circles_kitty = plot.circle(x=0, y="year", size=10, source=source_kitty, color=Category10[10][0], alpha=0.8)
+    circles = plot.circle(x=2, y="year", size=10, source=source_grecia, color="red", alpha=0.8)
 
     # Add hover tool
     hover = HoverTool(
@@ -71,7 +74,7 @@ def grafiquita():
             </div>
         </div>
         """,
-        renderers=[circles],
+        renderers=[circles_kitty],
         mode="mouse"
     )
     plot.add_tools(hover)
