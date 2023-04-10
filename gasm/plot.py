@@ -8,6 +8,10 @@ from bokeh.embed import components
 
 def grafiquita():
 # Load Bokeh resources for inline display
+
+    """
+    Display a timeline of Hello Kitty and Grecia, can be updated if desired by Grecia.
+    """
     from IPython.core.display import display, HTML
 
     output_notebook()
