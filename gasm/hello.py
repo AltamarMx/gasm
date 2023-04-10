@@ -25,6 +25,7 @@ def hello_kitty():
     "Every day is a chance to make someone smile",
     "Together, we can create a world filled with happiness",
     "Always choose kindness and love",
+    "Did you know Hello Kitty wears a bow over her left ear, while Mimmy wears a yellow bow on the opposite side? "
     ]
 
     hello_kitty_facts = [
