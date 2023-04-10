@@ -23,8 +23,8 @@ def grafiquita():
 
 
     kitty = [
-        {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
-        {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
+        {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/1974.jpg"},
+        {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/1975.jpg"},
         {"year": 1976, "event": "Hello Kitty gets her iconic bow", "image": "https://example.com/hello_kitty_1976.jpg"},
         {"year": 1980, "event": "Sanrio launches the first Hello Kitty themed merchandise", "image": "https://example.com/hello_kitty_1980.jpg"},
         {"year": 1983, "event": "First Hello Kitty animated television series", "image": "https://example.com/hello_kitty_1983.jpg"},
