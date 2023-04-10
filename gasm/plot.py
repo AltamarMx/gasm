@@ -15,9 +15,9 @@ def grafiquita():
     grecia = [
         {"year": 1994, "event": "Un Gatite was born", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/new_born.jpg"},
         {"year": 2015, "event": "Mi, first kitten", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/first.jpg"},
-        {"year": 2019, "event": "Promotora UBA", "image": "https://example.com/hello_kitty_1983.jpg"},
-        {"year": 2021, "event": "Se une a la Twitter y a la UEC", "image": "https://example.com/hello_kitty_1983.jpg"},
-        {"year": 2023, "event": "Lechuga & Pechuga", "image": "https://example.com/hello_kitty_1983.jpg"},
+        {"year": 2019, "event": "Promotora UBA", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/first.jpg"},
+        {"year": 2021, "event": "Se une a la Twitter y a la UEC", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/python.png"},
+        {"year": 2023, "event": "Lechuga & Pechuga", "image": "https://raw.githubusercontent.com/AltamarMx/gasm/main/gasm/img/canion_sumidero.png"},
         # ... add other events from the timeline, along with corresponding image URLs
     ]
 
