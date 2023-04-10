@@ -4,17 +4,20 @@ from bokeh.plotting import figure, show, output_notebook
 from bokeh.palettes import Category10
 
 from bokeh.embed import components
-from IPython.core.display import display, HTML
 
 
 def grafiquita():
 # Load Bokeh resources for inline display
+    from IPython.core.display import display, HTML
+
     output_notebook()
 
     grecia = [
-        {"year": 1974, "event": "Hello Kitty is created by Sanrio", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
+        {"year": 1994, "event": "Un Gatite was born", "image": "https://www.ier.unam.mx/~gbv/tux.png"},
         {"year": 1975, "event": "Hello Kitty is introduced to the United States", "image": "https://example.com/hello_kitty_1975.jpg"},
-        {"year": 1983, "event": "First Hello Kitty animated television series", "image": "https://example.com/hello_kitty_1983.jpg"},
+        {"year": 2019, "event": "Promotora UBA", "image": "https://example.com/hello_kitty_1983.jpg"},
+        {"year": 2020, "event": "Se une a la Twitter y a la UEC", "image": "https://example.com/hello_kitty_1983.jpg"},
+        {"year": 2023, "event": "29 años", "image": "https://example.com/hello_kitty_1983.jpg"},
         # ... add other events from the timeline, along with corresponding image URLs
     ]
 
@@ -112,13 +115,10 @@ def grafiquita():
 
 #     show(plot)
 
-    
+
     script, div = components(plot)
     html_repr = f"<div>{script}{div}</div>"
     display(HTML(html_repr))
 
     # Show the result
-#     
-    
-    
-    
+#

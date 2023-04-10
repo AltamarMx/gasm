@@ -1,10 +1,8 @@
 import random
 def hello_kitty():
     """
-    Display a random phrase from a list of phrases.
-
-    :param phrases: List of phrases to choose from
-    :type phrases: list
+    Display a random phrase related to Hello Kitty's philosopy
+    or some geek facts.
     """
     sanrio_phrases = [
     "Small Gift, Big Smile",
@@ -28,7 +26,7 @@ def hello_kitty():
     "Together, we can create a world filled with happiness",
     "Always choose kindness and love",
     ]
-    
+
     hello_kitty_facts = [
     "Hello Kitty's full name is Kitty White",
     "Hello Kitty is a British citizen",
@@ -53,6 +51,6 @@ def hello_kitty():
 
     lista = [sanrio_phrases,hello_kitty_facts]
     selected = random.choice(lista)
-    
+
     phrase = random.choice(selected)
     print(phrase)
